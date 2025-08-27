@@ -331,6 +331,19 @@ class Diffusion(L.LightningModule):
             return self._d3pm_parameterization(logits=logits)
         return logits
 
+    def forward_with_embeddings(self, x, sigma):
+        """Retorna embeddings do backbone ao invés de logits."""
+        sigma = self._process_sigma(sigma)
+        with torch.cuda.amp.autocast(dtype=torch.float32):
+            # Para HF DIT, pegamos last_hidden_state
+            if self.config.backbone == "hf_dit":
+                outputs = self.backbone.base_model(x, output_hidden_states=True)
+                embeddings = outputs.last_hidden_state  # [batch, seq_len, hidden_size]
+            else:
+                # Para outros backbones, você precisaria ajustar conforme o modelo
+                embeddings = self.backbone(x, sigma)
+        return embeddings
+
     def _d3pm_loss(self, model_output, xt, x0, t):
         dt = 1 / self.T
 
@@ -616,6 +629,7 @@ class Diffusion(L.LightningModule):
         return p_x0, copy_flag * x + (1 - copy_flag) * _x
 
     def _ddpm_update(self, x, t, dt):
+        """Atualiza a amostra x usando o processo de difusão DDPM."""
         sigma_t, _ = self.noise(t)
         sigma_s, _ = self.noise(t - dt)
         if sigma_t.ndim > 1:
@@ -629,6 +643,9 @@ class Diffusion(L.LightningModule):
         move_chance_t = move_chance_t[:, None, None]
         move_chance_s = move_chance_s[:, None, None]
         unet_conditioning = sigma_t
+
+        embeddings = self.forward_with_embeddings(x, unet_conditioning)
+
         log_p_x0 = self.forward(x, unet_conditioning)
         assert move_chance_t.ndim == log_p_x0.ndim
         # Technically, this isn't q_xs since there's a division
@@ -639,7 +656,7 @@ class Diffusion(L.LightningModule):
         _x = _sample_categorical(q_xs)
 
         copy_flag = (x != self.mask_index).to(x.dtype)
-        return copy_flag * x + (1 - copy_flag) * _x
+        return (copy_flag * x + (1 - copy_flag) * _x), embeddings
 
     def _ar_sampler(self, bsz):
         # precompute token buffer
@@ -662,7 +679,13 @@ class Diffusion(L.LightningModule):
 
     @torch.no_grad()
     def _sample(self, num_steps=None, eps=1e-5):
-        """Generate samples from the model."""
+        """
+        Generate samples from the model.
+
+        Returns:
+        - x: The generated samples.
+        - all_embeddings: The embeddings generated during sampling.
+        """
         batch_size_per_gpu = self.config.loader.eval_batch_size
         if self.parameterization == "ar":
             return self._ar_sampler(batch_size_per_gpu)
@@ -676,10 +699,13 @@ class Diffusion(L.LightningModule):
         dt = (1 - eps) / num_steps
         p_x0_cache = None
 
+        all_embeddings = []
         for i in range(num_steps):
             t = timesteps[i] * torch.ones(x.shape[0], 1, device=self.device)
             if self.sampler == "ddpm":
-                x = self._ddpm_update(x, t, dt)
+                x, embeddings = self._ddpm_update(x, t, dt)
+                all_embeddings.append(embeddings)
+
             elif self.sampler == "ddpm_cache":
                 p_x0_cache, x_next = self._ddpm_caching_update(
                     x, t, dt, p_x0=p_x0_cache
@@ -698,7 +724,7 @@ class Diffusion(L.LightningModule):
             else:
                 unet_conditioning = self.noise(t)[0]
                 x = self.forward(x, unet_conditioning).argmax(dim=-1)
-        return x
+        return x, all_embeddings
 
     def restore_model_and_sample(self, num_steps, eps=1e-5):
         """Generate samples from the model."""
@@ -712,14 +738,14 @@ class Diffusion(L.LightningModule):
             )
         self.backbone.eval()
         self.noise.eval()
-        samples = self._sample(num_steps=num_steps, eps=eps)
+        samples, all_embeddings = self._sample(num_steps=num_steps, eps=eps)
         if self.ema:
             self.ema.restore(
                 itertools.chain(self.backbone.parameters(), self.noise.parameters())
             )
         self.backbone.train()
         self.noise.train()
-        return samples
+        return samples, all_embeddings
 
     def get_score(self, x, sigma):
         model_output = self.forward(x, sigma)

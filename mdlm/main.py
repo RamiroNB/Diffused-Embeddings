@@ -1,5 +1,7 @@
 import os
 
+import dataloader
+import diffusion
 import fsspec
 import hydra
 import lightning as L
@@ -7,9 +9,6 @@ import omegaconf
 import rich.syntax
 import rich.tree
 import torch
-
-import dataloader
-import diffusion
 import utils
 
 omegaconf.OmegaConf.register_new_resolver(
@@ -83,6 +82,27 @@ def _print_batch(train_ds, valid_ds, tokenizer, k=64):
     print('ids:', last)
 
 
+def get_all_embs(config, logger, tokenizer):
+  logger.info('Generating samples and extracting embeddings.')
+  model = _load_from_checkpoint(
+      config=config,
+      tokenizer=tokenizer
+    )
+  
+  model.gen_ppl_metric.reset()
+  if config.eval.disable_ema:
+    logger.info('Disabling EMA.')
+    model.ema = None
+
+  for _ in range(config.sampling.num_sample_batches):
+    
+      _, all_embeddings = model.restore_model_and_sample(
+        num_steps=config.sampling.steps)
+
+  logger.critical('Len of all embeddings:', len(all_embeddings))
+  return all_embeddings
+  
+
 def generate_samples(config, logger, tokenizer):
   logger.info('Generating samples.')
   model = _load_from_checkpoint(config=config,
@@ -95,7 +115,7 @@ def generate_samples(config, logger, tokenizer):
   num_strides = config.sampling.num_strides
   for _ in range(config.sampling.num_sample_batches):
     if config.sampling.semi_ar:
-      _, intermediate_samples, _ = model.restore_model_and_semi_ar_sample(
+      _, intermediate_samples, _ = model.restore_model_and_semi_ar_sample( # TODO: modify it if we are going to extract embs from semi-AR
         stride_length=stride_length,
         num_strides=num_strides,
         dt=1 / config.sampling.steps)
@@ -106,7 +126,7 @@ def generate_samples(config, logger, tokenizer):
       # and diffusion.compute_generative_perplexity() discards
       # any text after the first EOS token.
     else:
-      samples = model.restore_model_and_sample(
+      samples, all_embeddings = model.restore_model_and_sample(
         num_steps=config.sampling.steps)
       text_samples = model.tokenizer.batch_decode(samples)
       model.compute_generative_perplexity(text_samples)
@@ -114,7 +134,8 @@ def generate_samples(config, logger, tokenizer):
   if not config.sampling.semi_ar:
     print('Generative perplexity:',
           model.gen_ppl_metric.compute())
-  return text_samples
+    
+  return text_samples, all_embeddings
 
 def _ppl_eval(config, logger, tokenizer):
   logger.info('Starting Zero Shot Eval.')
@@ -195,6 +216,8 @@ def main(config):
 
   if config.mode == 'sample_eval':
     generate_samples(config, logger, tokenizer)
+  if config.mode == 'get_all_embs':
+    get_all_embs(config, logger, tokenizer)
   elif config.mode == 'ppl_eval':
     _ppl_eval(config, logger, tokenizer)
   else:
