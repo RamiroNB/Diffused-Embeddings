@@ -1,0 +1,301 @@
+task,model,variant,cfg_label,score,score_col
+ArguAna (Retrieval),LLaDA,base,mean+last4,0.4227,Score
+ArguAna (Retrieval),LLaDA,base,mean_no_special+last4,0.4227,Score
+ArguAna (Retrieval),LLaDA,base,idf_mean+last4,0.40085,Score
+ArguAna (Retrieval),LLaDA,base,mean+indices(idx25-32),0.3915,Score
+ArguAna (Retrieval),LLaDA,base,mean_no_special+indices(idx25-32),0.3915,Score
+ArguAna (Retrieval),LLaDA,base,mean+last,0.38723,Score
+ArguAna (Retrieval),LLaDA,base,mean_no_special+last,0.38723,Score
+ArguAna (Retrieval),LLaDA,base,idf_mean+last,0.37028,Score
+ArguAna (Retrieval),LLaDA,base,idf_mean+indices(idx25-32),0.3611,Score
+ArguAna (Retrieval),LLaDA,base,mean+indices(idx13-20),0.32916,Score
+ArguAna (Retrieval),LLaDA,base,mean_no_special+indices(idx13-20),0.32916,Score
+ArguAna (Retrieval),LLaDA,base,idf_mean+indices(idx13-20),0.31771,Score
+ArguAna (Retrieval),LLaDA,base,mean+indices(idx1-8),0.27631,Score
+ArguAna (Retrieval),LLaDA,base,mean_no_special+indices(idx1-8),0.27631,Score
+ArguAna (Retrieval),LLaDA,base,idf_mean+indices(idx1-8),0.26024,Score
+ArguAna (Retrieval),LLaDA,base,max+last4,0.24006,Score
+ArguAna (Retrieval),LLaDA,base,max+indices(idx1-8),0.20272,Score
+ArguAna (Retrieval),LLaDA,base,max+indices(idx25-32),0.17222,Score
+ArguAna (Retrieval),LLaDA,base,max+last,0.16275,Score
+ArguAna (Retrieval),LLaDA,base,max+indices(idx13-20),0.15735,Score
+ArguAna (Retrieval),LLaDA,base,eos+last,0.01011,Score
+ArguAna (Retrieval),LLaDA,base,eos+last4,0.00559,Score
+ArguAna (Retrieval),LLaDA,base,eos+indices(idx25-32),0.00441,Score
+ArguAna (Retrieval),LLaDA,base,eos+indices(idx13-20),0.00403,Score
+ArguAna (Retrieval),LLaDA,base,eos+indices(idx1-8),0.00294,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,mean+last,0.50922,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,mean_no_special+last,0.50922,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,mean+last4,0.49535,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,mean_no_special+last4,0.49535,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,idf_mean+last,0.48971,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,idf_mean+last4,0.46866,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,mean+indices(idx25-32),0.4619,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,mean_no_special+indices(idx25-32),0.4619,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,idf_mean+indices(idx25-32),0.42936,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,mean+indices(idx13-20),0.35777,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,mean_no_special+indices(idx13-20),0.35777,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,max+last4,0.34739,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,idf_mean+indices(idx13-20),0.34428,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,mean+indices(idx1-8),0.33215,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,mean_no_special+indices(idx1-8),0.33215,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,idf_mean+indices(idx1-8),0.30977,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,max+last,0.28483,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,max+indices(idx25-32),0.27411,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,max+indices(idx1-8),0.23368,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,max+indices(idx13-20),0.20588,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,eos+last,0.0202,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,eos+last4,0.01135,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,eos+indices(idx25-32),0.00919,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,eos+indices(idx13-20),0.00377,Score
+ArguAna (Retrieval),LLaDA Instruct,instruct,eos+indices(idx1-8),0.00372,Score
+ArguAna (Retrieval),Llama,base,mean_no_special+indices(idx25-32),0.49269,Score
+ArguAna (Retrieval),Llama,base,mean+indices(idx25-32),0.49213,Score
+ArguAna (Retrieval),Llama,base,idf_mean+indices(idx25-32),0.48595,Score
+ArguAna (Retrieval),Llama,base,mean_no_special+last4,0.47563,Score
+ArguAna (Retrieval),Llama,base,mean+last4,0.47544,Score
+ArguAna (Retrieval),Llama,base,idf_mean+last4,0.46715,Score
+ArguAna (Retrieval),Llama,base,mean_no_special+indices(idx13-20),0.43789,Score
+ArguAna (Retrieval),Llama,base,mean+indices(idx13-20),0.43398,Score
+ArguAna (Retrieval),Llama,base,idf_mean+indices(idx13-20),0.42602,Score
+ArguAna (Retrieval),Llama,base,mean_no_special+last,0.42516,Score
+ArguAna (Retrieval),Llama,base,mean+last,0.42454,Score
+ArguAna (Retrieval),Llama,base,idf_mean+last,0.41439,Score
+ArguAna (Retrieval),Llama,base,max+indices(idx25-32),0.39674,Score
+ArguAna (Retrieval),Llama,base,max+last4,0.38344,Score
+ArguAna (Retrieval),Llama,base,mean_no_special+indices(idx1-8),0.38026,Score
+ArguAna (Retrieval),Llama,base,mean+indices(idx1-8),0.37,Score
+ArguAna (Retrieval),Llama,base,idf_mean+indices(idx1-8),0.35275,Score
+ArguAna (Retrieval),Llama,base,max+indices(idx13-20),0.34336,Score
+ArguAna (Retrieval),Llama,base,max+last,0.29695,Score
+ArguAna (Retrieval),Llama,base,max+indices(idx1-8),0.19381,Score
+ArguAna (Retrieval),Llama,base,eos+indices(idx25-32),0.05609,Score
+ArguAna (Retrieval),Llama,base,eos+last4,0.05365,Score
+ArguAna (Retrieval),Llama,base,eos+last,0.04549,Score
+ArguAna (Retrieval),Llama,base,eos+indices(idx13-20),0.01327,Score
+ArguAna (Retrieval),Llama,base,eos+indices(idx1-8),0.00944,Score
+ArguAna (Retrieval),Llama Instruct,instruct,mean_no_special+indices(idx25-32),0.50186,Score
+ArguAna (Retrieval),Llama Instruct,instruct,mean+indices(idx25-32),0.50075,Score
+ArguAna (Retrieval),Llama Instruct,instruct,idf_mean+indices(idx25-32),0.49668,Score
+ArguAna (Retrieval),Llama Instruct,instruct,mean_no_special+last4,0.48939,Score
+ArguAna (Retrieval),Llama Instruct,instruct,mean+last4,0.4893,Score
+ArguAna (Retrieval),Llama Instruct,instruct,idf_mean+last4,0.48365,Score
+ArguAna (Retrieval),Llama Instruct,instruct,mean_no_special+last,0.43194,Score
+ArguAna (Retrieval),Llama Instruct,instruct,mean+last,0.43177,Score
+ArguAna (Retrieval),Llama Instruct,instruct,idf_mean+last,0.41705,Score
+ArguAna (Retrieval),Llama Instruct,instruct,mean_no_special+indices(idx13-20),0.4084,Score
+ArguAna (Retrieval),Llama Instruct,instruct,mean+indices(idx13-20),0.40377,Score
+ArguAna (Retrieval),Llama Instruct,instruct,idf_mean+indices(idx13-20),0.40206,Score
+ArguAna (Retrieval),Llama Instruct,instruct,max+indices(idx25-32),0.37568,Score
+ArguAna (Retrieval),Llama Instruct,instruct,mean_no_special+indices(idx1-8),0.36903,Score
+ArguAna (Retrieval),Llama Instruct,instruct,max+last4,0.36752,Score
+ArguAna (Retrieval),Llama Instruct,instruct,mean+indices(idx1-8),0.36204,Score
+ArguAna (Retrieval),Llama Instruct,instruct,idf_mean+indices(idx1-8),0.3442,Score
+ArguAna (Retrieval),Llama Instruct,instruct,max+indices(idx13-20),0.31313,Score
+ArguAna (Retrieval),Llama Instruct,instruct,max+last,0.25709,Score
+ArguAna (Retrieval),Llama Instruct,instruct,max+indices(idx1-8),0.19614,Score
+ArguAna (Retrieval),Llama Instruct,instruct,eos+last4,0.04734,Score
+ArguAna (Retrieval),Llama Instruct,instruct,eos+indices(idx25-32),0.04693,Score
+ArguAna (Retrieval),Llama Instruct,instruct,eos+last,0.04092,Score
+ArguAna (Retrieval),Llama Instruct,instruct,eos+indices(idx13-20),0.01089,Score
+ArguAna (Retrieval),Llama Instruct,instruct,eos+indices(idx1-8),0.00973,Score
+Banking77 (Classification),LLaDA,base,mean+last4,0.5963636363636363,Score
+Banking77 (Classification),LLaDA,base,mean_no_special+last4,0.5963636363636363,Score
+Banking77 (Classification),LLaDA,base,mean+indices(idx25-32),0.5751948051948053,Score
+Banking77 (Classification),LLaDA,base,mean_no_special+indices(idx25-32),0.5751948051948053,Score
+Banking77 (Classification),LLaDA,base,idf_mean+last4,0.5712662337662338,Score
+Banking77 (Classification),LLaDA,base,max+last4,0.543603896103896,Score
+Banking77 (Classification),LLaDA,base,idf_mean+indices(idx25-32),0.5426298701298702,Score
+Banking77 (Classification),LLaDA,base,max+indices(idx25-32),0.5154545454545455,Score
+Banking77 (Classification),LLaDA,base,mean+last,0.494512987012987,Score
+Banking77 (Classification),LLaDA,base,mean_no_special+last,0.494512987012987,Score
+Banking77 (Classification),LLaDA,base,idf_mean+last,0.4883766233766234,Score
+Banking77 (Classification),LLaDA,base,max+last,0.4229545454545454,Score
+Banking77 (Classification),LLaDA,base,max+indices(idx1-8),0.3672402597402597,Score
+Banking77 (Classification),LLaDA,base,mean+indices(idx1-8),0.2973376623376623,Score
+Banking77 (Classification),LLaDA,base,mean_no_special+indices(idx1-8),0.2973376623376623,Score
+Banking77 (Classification),LLaDA,base,idf_mean+indices(idx1-8),0.2713961038961039,Score
+Banking77 (Classification),LLaDA,base,max+indices(idx13-20),0.2401623376623376,Score
+Banking77 (Classification),LLaDA,base,idf_mean+indices(idx13-20),0.2331493506493506,Score
+Banking77 (Classification),LLaDA,base,mean+indices(idx13-20),0.2329870129870129,Score
+Banking77 (Classification),LLaDA,base,mean_no_special+indices(idx13-20),0.2329870129870129,Score
+Banking77 (Classification),LLaDA,base,eos+last4,0.228538961038961,Score
+Banking77 (Classification),LLaDA,base,eos+last,0.2096428571428571,Score
+Banking77 (Classification),LLaDA,base,eos+indices(idx25-32),0.173051948051948,Score
+Banking77 (Classification),LLaDA,base,eos+indices(idx1-8),0.0346428571428571,Score
+Banking77 (Classification),LLaDA,base,eos+indices(idx13-20),0.0246103896103896,Score
+Banking77 (Classification),LLaDA Instruct,instruct,mean+last4,0.724935064935065,Score
+Banking77 (Classification),LLaDA Instruct,instruct,mean_no_special+last4,0.724935064935065,Score
+Banking77 (Classification),LLaDA Instruct,instruct,mean+indices(idx25-32),0.6972727272727273,Score
+Banking77 (Classification),LLaDA Instruct,instruct,mean_no_special+indices(idx25-32),0.6972727272727273,Score
+Banking77 (Classification),LLaDA Instruct,instruct,mean+last,0.6943831168831169,Score
+Banking77 (Classification),LLaDA Instruct,instruct,mean_no_special+last,0.6943831168831169,Score
+Banking77 (Classification),LLaDA Instruct,instruct,max+last,0.6737337662337662,Score
+Banking77 (Classification),LLaDA Instruct,instruct,idf_mean+last,0.6733766233766234,Score
+Banking77 (Classification),LLaDA Instruct,instruct,idf_mean+last4,0.6585714285714286,Score
+Banking77 (Classification),LLaDA Instruct,instruct,max+last4,0.6487337662337663,Score
+Banking77 (Classification),LLaDA Instruct,instruct,max+indices(idx25-32),0.632012987012987,Score
+Banking77 (Classification),LLaDA Instruct,instruct,idf_mean+indices(idx25-32),0.6281493506493506,Score
+Banking77 (Classification),LLaDA Instruct,instruct,mean+indices(idx13-20),0.6024025974025975,Score
+Banking77 (Classification),LLaDA Instruct,instruct,mean_no_special+indices(idx13-20),0.6024025974025975,Score
+Banking77 (Classification),LLaDA Instruct,instruct,idf_mean+indices(idx13-20),0.5695129870129869,Score
+Banking77 (Classification),LLaDA Instruct,instruct,max+indices(idx13-20),0.5611363636363638,Score
+Banking77 (Classification),LLaDA Instruct,instruct,mean+indices(idx1-8),0.5007792207792208,Score
+Banking77 (Classification),LLaDA Instruct,instruct,mean_no_special+indices(idx1-8),0.5007792207792208,Score
+Banking77 (Classification),LLaDA Instruct,instruct,max+indices(idx1-8),0.4807142857142857,Score
+Banking77 (Classification),LLaDA Instruct,instruct,idf_mean+indices(idx1-8),0.4499025974025974,Score
+Banking77 (Classification),LLaDA Instruct,instruct,eos+last,0.2000324675324675,Score
+Banking77 (Classification),LLaDA Instruct,instruct,eos+last4,0.1394155844155844,Score
+Banking77 (Classification),LLaDA Instruct,instruct,eos+indices(idx25-32),0.1071103896103896,Score
+Banking77 (Classification),LLaDA Instruct,instruct,eos+indices(idx13-20),0.0917207792207792,Score
+Banking77 (Classification),LLaDA Instruct,instruct,eos+indices(idx1-8),0.0653896103896104,Score
+Banking77 (Classification),Llama,base,mean_no_special+indices(idx1-8),0.5520779220779221,Score
+Banking77 (Classification),Llama,base,mean_no_special+indices(idx25-32),0.5240584415584415,Score
+Banking77 (Classification),Llama,base,mean_no_special+indices(idx13-20),0.5191883116883117,Score
+Banking77 (Classification),Llama,base,mean_no_special+last4,0.5000649350649351,Score
+Banking77 (Classification),Llama,base,idf_mean+indices(idx25-32),0.4813961038961039,Score
+Banking77 (Classification),Llama,base,idf_mean+last4,0.463896103896104,Score
+Banking77 (Classification),Llama,base,mean_no_special+last,0.4189935064935065,Score
+Banking77 (Classification),Llama,base,mean+last4,0.4170779220779221,Score
+Banking77 (Classification),Llama,base,mean+last,0.4159090909090909,Score
+Banking77 (Classification),Llama,base,idf_mean+last,0.4005194805194804,Score
+Banking77 (Classification),Llama,base,max+last,0.381103896103896,Score
+Banking77 (Classification),Llama,base,mean+indices(idx25-32),0.3796428571428571,Score
+Banking77 (Classification),Llama,base,eos+indices(idx25-32),0.3777272727272727,Score
+Banking77 (Classification),Llama,base,max+last4,0.3769155844155843,Score
+Banking77 (Classification),Llama,base,idf_mean+indices(idx13-20),0.3767857142857143,Score
+Banking77 (Classification),Llama,base,eos+last4,0.3749675324675324,Score
+Banking77 (Classification),Llama,base,max+indices(idx25-32),0.3693831168831168,Score
+Banking77 (Classification),Llama,base,eos+indices(idx13-20),0.339090909090909,Score
+Banking77 (Classification),Llama,base,eos+indices(idx1-8),0.3354220779220779,Score
+Banking77 (Classification),Llama,base,eos+last,0.3143506493506493,Score
+Banking77 (Classification),Llama,base,idf_mean+indices(idx1-8),0.2892857142857143,Score
+Banking77 (Classification),Llama,base,mean+indices(idx1-8),0.2697077922077923,Score
+Banking77 (Classification),Llama,base,mean+indices(idx13-20),0.255,Score
+Banking77 (Classification),Llama,base,max+indices(idx13-20),0.0129870129870129,Score
+Banking77 (Classification),Llama,base,max+indices(idx1-8),0.0129870129870129,Score
+Banking77 (Classification),Llama Instruct,instruct,mean_no_special+indices(idx1-8),0.5890909090909091,Score
+Banking77 (Classification),Llama Instruct,instruct,mean_no_special+indices(idx25-32),0.5611363636363638,Score
+Banking77 (Classification),Llama Instruct,instruct,mean_no_special+indices(idx13-20),0.5492532467532467,Score
+Banking77 (Classification),Llama Instruct,instruct,mean_no_special+last4,0.533538961038961,Score
+Banking77 (Classification),Llama Instruct,instruct,idf_mean+indices(idx25-32),0.5028571428571429,Score
+Banking77 (Classification),Llama Instruct,instruct,idf_mean+last4,0.4946753246753247,Score
+Banking77 (Classification),Llama Instruct,instruct,eos+indices(idx25-32),0.4830194805194804,Score
+Banking77 (Classification),Llama Instruct,instruct,eos+last4,0.4741883116883117,Score
+Banking77 (Classification),Llama Instruct,instruct,mean_no_special+last,0.4486688311688311,Score
+Banking77 (Classification),Llama Instruct,instruct,mean+last,0.4460389610389611,Score
+Banking77 (Classification),Llama Instruct,instruct,eos+indices(idx13-20),0.4443506493506493,Score
+Banking77 (Classification),Llama Instruct,instruct,idf_mean+last,0.4288961038961038,Score
+Banking77 (Classification),Llama Instruct,instruct,mean+last4,0.4256493506493506,Score
+Banking77 (Classification),Llama Instruct,instruct,max+last,0.4209415584415584,Score
+Banking77 (Classification),Llama Instruct,instruct,eos+last,0.4144155844155844,Score
+Banking77 (Classification),Llama Instruct,instruct,eos+indices(idx1-8),0.4032467532467533,Score
+Banking77 (Classification),Llama Instruct,instruct,max+last4,0.3950324675324675,Score
+Banking77 (Classification),Llama Instruct,instruct,mean+indices(idx25-32),0.3754545454545454,Score
+Banking77 (Classification),Llama Instruct,instruct,max+indices(idx25-32),0.3704220779220779,Score
+Banking77 (Classification),Llama Instruct,instruct,idf_mean+indices(idx13-20),0.3567857142857142,Score
+Banking77 (Classification),Llama Instruct,instruct,idf_mean+indices(idx1-8),0.2895454545454545,Score
+Banking77 (Classification),Llama Instruct,instruct,mean+indices(idx1-8),0.2807467532467532,Score
+Banking77 (Classification),Llama Instruct,instruct,mean+indices(idx13-20),0.2262012987012987,Score
+Banking77 (Classification),Llama Instruct,instruct,max+indices(idx13-20),0.0129870129870129,Score
+Banking77 (Classification),Llama Instruct,instruct,max+indices(idx1-8),0.0129870129870129,Score
+STSBenchmark,LLaDA,base,max+indices(idx1-8),0.5621776968721758,Score
+STSBenchmark,LLaDA,base,idf_mean+indices(idx1-8),0.5591075790710041,Score
+STSBenchmark,LLaDA,base,idf_mean+indices(idx13-20),0.505578057585458,Score
+STSBenchmark,LLaDA,base,mean+indices(idx1-8),0.488581567247655,Score
+STSBenchmark,LLaDA,base,mean_no_special+indices(idx1-8),0.488581567247655,Score
+STSBenchmark,LLaDA,base,idf_mean+last,0.4488608492227042,Score
+STSBenchmark,LLaDA,base,max+last4,0.4453231551803615,Score
+STSBenchmark,LLaDA,base,idf_mean+last4,0.431672891809341,Score
+STSBenchmark,LLaDA,base,max+last,0.4218407951384934,Score
+STSBenchmark,LLaDA,base,idf_mean+indices(idx25-32),0.4194757258208121,Score
+STSBenchmark,LLaDA,base,mean+last,0.4184425948195032,Score
+STSBenchmark,LLaDA,base,mean_no_special+last,0.4184425948195032,Score
+STSBenchmark,LLaDA,base,mean+indices(idx13-20),0.3953073918602088,Score
+STSBenchmark,LLaDA,base,mean_no_special+indices(idx13-20),0.3953073918602088,Score
+STSBenchmark,LLaDA,base,mean+last4,0.3838576334022337,Score
+STSBenchmark,LLaDA,base,mean_no_special+last4,0.3838576334022337,Score
+STSBenchmark,LLaDA,base,max+indices(idx25-32),0.3783564092025172,Score
+STSBenchmark,LLaDA,base,mean+indices(idx25-32),0.3641241665341824,Score
+STSBenchmark,LLaDA,base,mean_no_special+indices(idx25-32),0.3641241665341824,Score
+STSBenchmark,LLaDA,base,max+indices(idx13-20),0.2713992069591896,Score
+STSBenchmark,LLaDA,base,eos+last4,0.2046085023383253,Score
+STSBenchmark,LLaDA,base,eos+last,0.1980395435906781,Score
+STSBenchmark,LLaDA,base,eos+indices(idx25-32),0.1884039284573506,Score
+STSBenchmark,LLaDA,base,eos+indices(idx1-8),0.1679107473566674,Score
+STSBenchmark,LLaDA,base,eos+indices(idx13-20),0.1317328685941866,Score
+STSBenchmark,LLaDA Instruct,instruct,idf_mean+last4,0.7246618145267285,Score
+STSBenchmark,LLaDA Instruct,instruct,idf_mean+indices(idx25-32),0.6963582717388473,Score
+STSBenchmark,LLaDA Instruct,instruct,mean+last4,0.6872261444109976,Score
+STSBenchmark,LLaDA Instruct,instruct,mean_no_special+last4,0.6872261444109976,Score
+STSBenchmark,LLaDA Instruct,instruct,idf_mean+last,0.6679584991140444,Score
+STSBenchmark,LLaDA Instruct,instruct,mean+last,0.646692949796829,Score
+STSBenchmark,LLaDA Instruct,instruct,mean_no_special+last,0.646692949796829,Score
+STSBenchmark,LLaDA Instruct,instruct,mean+indices(idx25-32),0.6408989072809196,Score
+STSBenchmark,LLaDA Instruct,instruct,mean_no_special+indices(idx25-32),0.6408989072809196,Score
+STSBenchmark,LLaDA Instruct,instruct,idf_mean+indices(idx13-20),0.6179489946800134,Score
+STSBenchmark,LLaDA Instruct,instruct,max+last,0.612436185350431,Score
+STSBenchmark,LLaDA Instruct,instruct,max+indices(idx1-8),0.6064596200531036,Score
+STSBenchmark,LLaDA Instruct,instruct,idf_mean+indices(idx1-8),0.5784183235397953,Score
+STSBenchmark,LLaDA Instruct,instruct,max+last4,0.5516010551587757,Score
+STSBenchmark,LLaDA Instruct,instruct,mean+indices(idx13-20),0.5343477945235404,Score
+STSBenchmark,LLaDA Instruct,instruct,mean_no_special+indices(idx13-20),0.5343477945235404,Score
+STSBenchmark,LLaDA Instruct,instruct,mean+indices(idx1-8),0.5191131106980832,Score
+STSBenchmark,LLaDA Instruct,instruct,mean_no_special+indices(idx1-8),0.5191131106980832,Score
+STSBenchmark,LLaDA Instruct,instruct,max+indices(idx25-32),0.5001407414666833,Score
+STSBenchmark,LLaDA Instruct,instruct,max+indices(idx13-20),0.477883636895197,Score
+STSBenchmark,LLaDA Instruct,instruct,eos+indices(idx1-8),0.2648517315167547,Score
+STSBenchmark,LLaDA Instruct,instruct,eos+last4,0.205396343526534,Score
+STSBenchmark,LLaDA Instruct,instruct,eos+last,0.2017014996576455,Score
+STSBenchmark,LLaDA Instruct,instruct,eos+indices(idx25-32),0.1735817486726305,Score
+STSBenchmark,LLaDA Instruct,instruct,eos+indices(idx13-20),0.113427525203559,Score
+STSBenchmark,Llama,base,idf_mean+indices(idx25-32),0.5792552002659188,Score
+STSBenchmark,Llama,base,idf_mean+last4,0.5716214093155673,Score
+STSBenchmark,Llama,base,idf_mean+last,0.5330056024079824,Score
+STSBenchmark,Llama,base,mean_no_special+indices(idx25-32),0.5205852189262705,Score
+STSBenchmark,Llama,base,mean_no_special+last4,0.5062990923242168,Score
+STSBenchmark,Llama,base,mean_no_special+indices(idx1-8),0.4971280234126835,Score
+STSBenchmark,Llama,base,max+indices(idx25-32),0.4846248040587729,Score
+STSBenchmark,Llama,base,mean_no_special+indices(idx13-20),0.4752159412793501,Score
+STSBenchmark,Llama,base,max+last4,0.4625191422941118,Score
+STSBenchmark,Llama,base,mean+last,0.4589874821267945,Score
+STSBenchmark,Llama,base,mean_no_special+last,0.4576526616108298,Score
+STSBenchmark,Llama,base,eos+indices(idx25-32),0.4356043397441304,Score
+STSBenchmark,Llama,base,eos+last4,0.435330164010521,Score
+STSBenchmark,Llama,base,max+indices(idx1-8),0.4327305930809464,Score
+STSBenchmark,Llama,base,max+indices(idx13-20),0.4266773269056708,Score
+STSBenchmark,Llama,base,max+last,0.4249831390538299,Score
+STSBenchmark,Llama,base,mean+last4,0.4088495276341396,Score
+STSBenchmark,Llama,base,eos+last,0.3937117582879348,Score
+STSBenchmark,Llama,base,eos+indices(idx13-20),0.373558421624055,Score
+STSBenchmark,Llama,base,idf_mean+indices(idx13-20),0.3628096131217611,Score
+STSBenchmark,Llama,base,mean+indices(idx25-32),0.3604091055436531,Score
+STSBenchmark,Llama,base,eos+indices(idx1-8),0.3465384821065285,Score
+STSBenchmark,Llama,base,idf_mean+indices(idx1-8),0.2232911456099146,Score
+STSBenchmark,Llama,base,mean+indices(idx1-8),0.2134811308742262,Score
+STSBenchmark,Llama,base,mean+indices(idx13-20),0.202816958522274,Score
+STSBenchmark,Llama Instruct,instruct,idf_mean+indices(idx25-32),0.6001483761746064,Score
+STSBenchmark,Llama Instruct,instruct,idf_mean+last4,0.5899422377501294,Score
+STSBenchmark,Llama Instruct,instruct,mean_no_special+indices(idx25-32),0.5484556558302172,Score
+STSBenchmark,Llama Instruct,instruct,idf_mean+last,0.5473777550882891,Score
+STSBenchmark,Llama Instruct,instruct,mean_no_special+last4,0.5291670551556467,Score
+STSBenchmark,Llama Instruct,instruct,mean_no_special+indices(idx1-8),0.5235897745620808,Score
+STSBenchmark,Llama Instruct,instruct,mean_no_special+indices(idx13-20),0.5035545471874056,Score
+STSBenchmark,Llama Instruct,instruct,eos+last4,0.4870014913632133,Score
+STSBenchmark,Llama Instruct,instruct,eos+indices(idx25-32),0.4857064399583789,Score
+STSBenchmark,Llama Instruct,instruct,mean+last,0.4823386340744771,Score
+STSBenchmark,Llama Instruct,instruct,mean_no_special+last,0.4799034122611759,Score
+STSBenchmark,Llama Instruct,instruct,max+indices(idx1-8),0.4791117501831188,Score
+STSBenchmark,Llama Instruct,instruct,max+indices(idx25-32),0.4733715181859907,Score
+STSBenchmark,Llama Instruct,instruct,max+last4,0.4557431427585415,Score
+STSBenchmark,Llama Instruct,instruct,max+indices(idx13-20),0.4533257967127229,Score
+STSBenchmark,Llama Instruct,instruct,eos+last,0.4507635524777719,Score
+STSBenchmark,Llama Instruct,instruct,max+last,0.4363984391660792,Score
+STSBenchmark,Llama Instruct,instruct,mean+last4,0.417528837772653,Score
+STSBenchmark,Llama Instruct,instruct,eos+indices(idx13-20),0.3814706815451963,Score
+STSBenchmark,Llama Instruct,instruct,eos+indices(idx1-8),0.3777796260875032,Score
+STSBenchmark,Llama Instruct,instruct,idf_mean+indices(idx13-20),0.3733172509458951,Score
+STSBenchmark,Llama Instruct,instruct,mean+indices(idx25-32),0.3586521329216276,Score
+STSBenchmark,Llama Instruct,instruct,idf_mean+indices(idx1-8),0.2298888290395731,Score
+STSBenchmark,Llama Instruct,instruct,mean+indices(idx1-8),0.227006908660669,Score
+STSBenchmark,Llama Instruct,instruct,mean+indices(idx13-20),0.2085819234077588,Score
