@@ -87,8 +87,3 @@ The top-level metric reported in the notebooks is `main_score` as provided by MT
   - adjust `layer_cfgs`, `poolings`, or batch size (`bs`) and max sequence length (`max_len`).
 - **Add tasks**:
   - extend the MTEB task list in the runner cell(s).
-
-
-## License
-
-Add a license before public release (e.g., MIT/Apache-2.0) and ensure model usage complies with the corresponding model licenses and terms.
