@@ -1,0 +1,2 @@
+transformers==4.57.3
+mteb==1.12.75
